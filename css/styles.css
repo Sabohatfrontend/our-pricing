@@ -114,6 +114,7 @@ img{
 }
 
 .pricing-info-list {
+  position: relative;
 padding: 0;
 margin: 0;
 display: flex;
@@ -174,7 +175,10 @@ list-style: none;
   padding-bottom: 32px;
   width: 288px;
   border-bottom: 1px solid rgba(110, 114, 142, 0.25);
+}
 
+.pricing-info-item:nth-child(2) .currency-content {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .currency {
@@ -196,6 +200,10 @@ letter-spacing: -2px;
   border-bottom: 1px solid rgba(110, 114, 142, 0.25);
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.pricing-info-item:nth-child(2) .pricing-info-text {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .button {
@@ -234,4 +242,8 @@ background-image: var(--brend-color);
   background-color: #fff;
   color:  #6D72DE;
   border-color: #6D72DE;
+}
+
+.button:active{
+  opacity: 0.6;
 }
